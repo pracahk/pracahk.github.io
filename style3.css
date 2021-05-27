@@ -1,0 +1,210 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #333333;
+	color: white;
+}
+
+td{
+	border: 1px; 
+	color: black;
+	border-style: solid;
+}
+
+tr, td{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-family: arial;
+}
+
+table{
+	border-collapse: collapse;
+	background-color: #666666;
+}
+
+#n{
+	background-color: black;
+}
+
+#pr{
+	background-color: #33CC66;
+}
+
+#ps{
+	background-color: red;
+}
+
+button{
+	margin-top: 5px;
+	color: white;
+	background-color: red;
+	border-style: solid, 1px;
+	border-color: black;
+}
+
+p{
+	margin: 0px;
+}
+
+th{
+	border-style: solid;
+	border: 1px; 
+	color: black;
+}
+
+#ms{
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	height: 360px;
+}
+
+#menu2{
+	width: 300px;
+	height: 900px;
+}
+
+#z{
+	height: 10px;
+	width: 10px;
+	background-color: lime;
+	
+}
+
+#prom{
+	float: left;
+}
+
+img{
+	float: left;
+	margin-top: 3px;
+}
+
+#m{
+	height: 15px;
+	padding-left: 70px;
+}
+
+#pgp{
+	background-color: #0099dd;
+}
+
+#ni{
+	color: #CC0000;
+	border-color: black;
+	background-color: #444444;
+}
+
+#studia{
+	background-color: #990000;
+}
+
+#ser{
+	width: 100px;
+	height: 100px;
+}
+
+#serw{
+	margin-bottom: 5px;
+}
+
+.but{
+	margin-left: 5px;
+}
+
+#suma, #amus{
+	margin-left: 5px;
+	width: 20%;
+	clear: both;
+}
+
+#stopka{
+	background-color: #222222;
+	color: white;
+	height: 100px;
+	clear: both;
+}
+
+#legend{
+	margin-top: 5px;
+}
+
+#buttons{
+	width: 10%;
+	background-color: #222222;
+	color: white;
+	height: 125px;
+	float: left;
+}
+
+#gp{
+	width: 10%;
+	float: left;
+	background-color: #222222;
+	color: white;
+	height: 125px;
+}
+
+#sss{
+	width: 80%;
+	float: left;
+	background-color: #222222;
+	color: white;
+	height: 125px;
+}
+
+#ccc{
+	text-align: center;
+}
+
+#ser1{
+	width: 100px;
+	height: 50px;
+}
+
+#serw1{
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+#serw2{
+	margin-left: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+#serwisek{
+	width: 100%;
+	background-color: #222222;
+	color: white;
+	height: 125px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
+#zmiany{
+	font-size: 10px;
+	float: right;
+}
+
+#pj{
+	font-size: 10px;
+	float: left;
+}
+
+#ps{
+	color: #33CC66;
+	background-color: #990000;
+	border-color: black;
+
+}

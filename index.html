@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Carrefour - praca</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<link rel="icon" href="logo.png">
+<meta charset="UTF-8" lang="pl">
+</head>
+<body>
+<div id="buttons">
+<button onClick="sumaA()" class="but">Suma (A)</button><p id="amus">Suma: </p>
+</div>
+<div id="gp">
+<p id="legend">Legenda:</p>
+<img src="z1.png"><p> - Promenada</p>
+<img src="c1.png"><p> - Studia</p>
+<img src="n1.png"><p> - Galeria Północna</p>
+</div>
+<div id="sss">
+<a href="index.html"><p id="href">Merchandising</p></a><a href="index2.html"><p id="href">Serwis</p></a>
+</div>
+<!--
+<script>
+var password;
+do{  
+var password=window.prompt("Podaj hasło","");
+}while((password!=="54321"));
+</script>
+-->
+<script> 
+var amus;
+	function sumaA(){
+		amus = s1 + s2 + s3 + s4 + s5 + Math.round(s6) + Math.round(s7) + Math.round(s8) + Math.round(s9) + Math.round(s10);	
+		amus = document.getElementById("amus").innerHTML ="Suma: "+amus+"zł";
+}
+
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Wrzesień</td>
+	<tr> 
+		<td id="n"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td id="ni">6</td>
+	</tr>
+	<tr>
+		<td>7</td><td>8</td><td id="pr">9</p></td><td>10</td><td>11</td><td id="pr">12</p></td><td id="ni">13</td>
+	</tr>
+	<tr>
+		<td>14</td><td id="pr">15</p></td><td>16</td><td>17</td><td id="pr">18</p></td><td id="pr">19</p></td><td id="ni">20</td>
+	</tr>
+	<tr>
+		<td id="pr">21</p></td><td>22</td><td>23</td><td>24</td><td id="pr">25</p></td><td id="pr">26</p></td><td id="ni">27</td>
+	</tr>
+	<tr> 
+		<td>28</td><td>29</td><td>30</td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td>
+	</tr>
+	<tr>
+		<td colspan="7">Wrzesień</td>
+	</tr>
+</table>
+<!--<button onClick="dni1()">Dni</button>
+<button onClick="klik1()">Oblicz</button>-->
+<!--<button onClick="zlicz()">Auto</button>-->
+<button onClick="zlicz1()">Auto</button>
+<button onClick="sumka1()">Sumka</button>
+<!--<p id="pole1">Liczba dni: </p>
+<p id="txt1">Hajs: </p>>-->
+<!--<p id="auto">Liczba dni: </p>-->
+<p id="auto1">Liczba dni: </p>
+<p id="s1">Hajs: </p>
+<script>
+
+function zlicz1(){
+	var myidd = 8;
+	document.getElementById("auto1").innerHTML = "Liczba dni: " +myidd;
+}
+var s1 = 0;
+function sumka1(){
+	s1 = 17*8*8;
+	var myidd = 8;
+	sumkaa = 17*8*myidd;
+	document.getElementById("s1").innerHTML = "Hajs: " +sumkaa+" zł";
+}
+
+/*
+function zlicz(){
+	var myid = document.getElementById("p").childElementCount;
+	document.getElementById("auto").innerHTML = "Liczba dni: " +myid;
+}
+*/
+/*
+var dnis1 = 0;
+function dni1(){ 
+	dnis1 += 1;
+	document.getElementById("pole1").innerHTML ="Liczba dni: " +dnis1;
+}
+
+var txt1 = 0;
+function klik1(){
+	txt1 = 8*17*dnis1; 
+	document.getElementById("txt1").innerHTML ="Hajs: "+txt1+" zł";
+}
+*/
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Październik</td>
+	<tr> 
+		<td id="n"></td><td id="n"></td><td  id="n"></td><td id="pr">1</td><td>2</td><td id="pr">3</td><td id="ni">4</td>
+	</tr>
+	<tr>
+		<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td id="ni">11</td>
+	</tr>
+	<tr>
+		<td>12</td><td id="pgp">13</td><td>14</td><td>15</td><td>16</td><td id="studia">17</td><td id="studia">18</td>
+	</tr>
+	<tr>
+		<td id="pr">19</td><td id="pr">20</td><td id="pr">21</td><td>22</td><td id="pr">23</td><td id="pr">24</td><td id="ni">25</td>
+	</tr>
+	<tr> 
+		<td>26</td><td id="pr">27</td><td id="pr">28</td><td>29</td><td id="pr">30</td><td id="pr">31</td><td id="n"></td>
+	</tr>
+	<tr>
+		<td colspan="7">Październik</td>
+	</tr>
+</table>
+<!--<button onClick="dni2()">Dni</button>
+<button onClick="klik2()">Oblicz</button>-->
+<button onClick="zlicz2()">Auto</button>
+<button onClick="sumka2()">Sumka</button>
+<!--<p id="pole2">Liczba dni: </p>
+<p id="txt2">Hajs: </p>-->
+<p id="auto2">Liczba dni: </p>
+<p id="s2">Hajs: </p>
+<script>
+
+// myidd = liczba dni
+function zlicz2(){
+	var myidd = 12;
+	document.getElementById("auto2").innerHTML = "Liczba dni: " +myidd;
+}
+var s2 = 0;
+function sumka2(){
+	s2 = 17*8*12;
+	var myidd = 12;
+	sumkaa = 17*8*myidd;
+	document.getElementById("s2").innerHTML = "Hajs: " +sumkaa+" zł";
+}
+/*
+var dnis2 = 0;
+function dni2(){ 
+	dnis2 += 1;
+	document.getElementById("pole2").innerHTML ="Liczba dni: " +dnis2;
+}
+
+var txt2 = 0;
+function klik2(){
+	txt2 = 8*17*dnis2; 
+	document.getElementById("txt2").innerHTML ="Hajs: "+txt2+"zł";
+}
+*/
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<tbody><tr><td colspan="7">Listopad</td>
+	</tr><tr>
+		<td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="ni">1</td>
+	</tr>
+	<tr>
+		<td id="pr">2</td><td>3</td><td id="pr">4</td><td>5</td><td id="pr">6</td><td id="studia">7</td><td id="studia">8</td>
+	</tr>
+	<tr>
+		<td id="pr">9</td><td id="pr">10</td><td>11</td><td id="pr">12</td><td id="pr">13</td><td id="pr">14</td><td id="ni">15</td>
+	</tr>
+	<tr>
+		<td>16</td><td id="pr">17</td><td id="pr">18</td><td>19</td><td id="pr">20</td><td id="studia">21</td><td id="studia">22</td>
+	</tr>
+	<tr>
+		<td id="pr">23</td><td>24</td><td id="pr">25</td><td id="pr">26</td><td id="pr">27</td><td id="pr">28</td><td id="ni">29</td>
+	</tr>
+	<tr>
+		<td id="pr">30</td><td colspan="6">Listopad</td>
+	</tr>
+</tbody></table>
+<button onclick="zlicz3()">Auto</button>
+<button onclick="sumka3()">Sumka</button>
+<p id="auto3">Liczba dni: </p>
+<p id="s3">Hajs: </p>
+<script>
+function zlicz3(){
+	var myidd = 17;
+	document.getElementById("auto3").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s3 = 0;
+function sumka3(){
+	s3 = 17*8*17;
+	var myidd = 17;
+	sumkaa = 17*8*myidd;
+	document.getElementById("s3").innerHTML = "Hajs: " +sumkaa+" zł";
+}
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<tbody><tr><td colspan="7">Grudzień</td>
+	</tr><tr>
+		<td id="n"></td><td>1</td><td>2</td><td>3</td><td id="pr">4</td><td id="studia">5</td><td id="studia">6</td>
+	</tr>
+	<tr>
+		<td id="pr">7</td><td id="pr">8</td><td id="pr">9</td><td id="pr">10</td><td id="pr">11</td><td id="pr">12</td><td id="pr">13</td>
+	</tr>
+	<tr>
+		<td>14</td><td id="pr">15</td><td id="pr">16</td><td id="pr">17</td><td id="pr">18</td><td id="studia">19</td><td id="studia">20</td>
+	</tr>
+	<tr>
+		<td id="pr">21</td><td id="pr">22</td><td>23</td><td id="pr">24</td><td>25</td><td>26</td><td id="ni">27</td>
+	</tr>
+	<tr>
+		<td id="pr">28</td><td id="pr">29</td><td id="pr">30</td><td id="pr">31</td><td id="n"></td><td id="n"></td><td id="n"></td>
+	</tr>
+	<tr>
+	<td colspan="7">Grudzień</td>
+	</tr>
+</table>
+<button onclick="zlicz4()">Auto</button>
+<button onclick="sumka4()">Sumka</button>
+<p id="auto4">Liczba dni: </p>
+<p id="s4">Hajs: </p>
+<script>
+function zlicz4(){
+	var myidd = 19;
+	document.getElementById("auto4").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s4 = 0;
+function sumka4(){
+	s4 = 17*8*19;
+	var myidd = 19;
+	sumkaa = 17*8*myidd;
+	document.getElementById("s4").innerHTML = "Hajs: " +sumkaa+" zł";
+}
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Styczeń</td>
+	<tr>
+		<td id="n">></td><td id="n"></td><td id="n"></td><td id="n"></td><td>1</td><td id="pr">2</td><td id="ni">3</td>
+	</tr>
+	<tr>
+		<td id="pr">4</td><td id="pr">5</td><td>6</td><td id="pr">7</td><td>8</td><td id="pr">9</td><td id="ni">10</td>
+	</tr>
+	<tr>
+		<td id="pr">11</td><td id="pr">12</td><td>13</td><td id="pr">14</td><td id="pr">15</td><td id="studia">16</td><td id="studia">17</td>
+	</tr>
+	<tr>
+		<td id="pr">18<p id="zmiany">1</p></td><td id="pr">19<p id="zmiany">1</p></td><td>20</td><td>21</td><td id="pr">22<p id="zmiany">2</p></td><td id="pr">23<p id="zmiany">1</p></td><td id="ni">24</td>
+	</tr>
+	<tr>
+		<td>25</td><td id="pr">26<p id="zmiany">L</p></td><td>27</td><td>28</td><td id="pr">29<p id="zmiany">1</p></td><td id="studia">30</td><td id="studia">31</td>
+	</tr>
+	<tr>
+		<td colspan="7">Styczeń</td>
+	</tr>
+</table>
+<button onclick="zlicz5()">Auto</button>
+<button onclick="sumka5()">Sumka</button>
+<p id="auto5">Liczba dni: </p>
+<p id="s5">Hajs: </p>
+<script>
+function zlicz5(){
+	var myidd = 15;
+	document.getElementById("auto5").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s5 = 0;
+function sumka5(){
+	s5 = (18.3 * 8 * 15) + 91;
+	var myidd = 15;
+	var h5 = 91;
+	sumkaa = (18.3 * 8 * myidd) + 91;
+	document.getElementById("s5").innerHTML = "Hajs: " +sumkaa+" zł";
+}
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Luty</td>
+	<tr>
+		<td>1</td><td id="pr">2<p id="zmiany">L</p></td><td id="pr">3<p id="zmiany">1</p></td><td id="pr">4<p id="zmiany">2</p></td><td>5</td><td id="pr">6<p id="zmiany">1</p></td><td id="ni">7</td>
+	</tr>
+	<tr>
+		<td>8</td><td>9</td><td>10</td><td id="pr">11<p id="zmiany">1</p></td><td id="pr">12<p id="zmiany">1</p></td><td>13</td><td id="ni">14</td>
+	</tr>
+	<tr>
+		<td id="pr">15<p id="zmiany">2</p></td><td>16</td><td id="pr">17<p id="zmiany">1</p></td><td id="pr">18<p id="zmiany">1</p></td><td id="pr">19<p id="zmiany">1</p></td><td id="pr">20<p id="zmiany">1</p></td><td id="ni">21</td>
+	</tr>
+	<tr>
+		<td id="pr">22<p id="zmiany">1</p></td><td id="pr">23<p id="zmiany">1</p></td><td>24</td><td id="pr">25<p id="zmiany">1</p></td><td id="pr">26<p id="zmiany">1</p></td><td id="ps">27<p id="zmiany">1</p></td><td id="studia">28</td>
+	</tr>
+	<tr>
+		<td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td>
+	</tr>
+	<tr>
+		<td colspan="7">Luty</td>
+	</tr>
+</table>
+<button onclick="zlicz6()">Auto</button>
+<button onclick="sumka6()">Sumka</button>
+<p id="auto6">Liczba dni: </p>
+<p id="s6">Hajs: </p>
+<script>
+function zlicz6(){
+	var myidd = 16;
+	document.getElementById("auto6").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s6 = 0;
+function sumka6(){
+	s6 = 18.3 * 8 * 16;
+	var myidd = 16;
+	sumkaa = 18.3 * 8 * myidd;
+	document.getElementById("s6").innerHTML = "Hajs: " +Math.round(sumkaa)+" zł";
+}
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Marzec</td>
+	<tr>
+		<td id="pr">1<p id="zmiany">1</p></td><td id="pr">2<p id="zmiany">1</p></td><td>3</td><td>4</td><td id="pr">5<p id="zmiany">1</p></td><td id="pr">6<p id="zmiany">1</p></td><td id="ni">7</td>
+	</tr>
+	<tr>
+		<td>8</td><td id="pr">9<p id="zmiany">2</p></td><td id="pr">10<p id="zmiany">1</p></td><td id="pr">11<p id="zmiany">2</p></td><td id="pr">12<p id="zmiany">1</p></td><td id="ps"><p id="pj">6</p>13<p id="zmiany">1</p></td><td id="studia">14</td>
+	</tr>
+	<tr>
+		<td id="pr">15<p id="zmiany">1</p></td><td id="pr">16<p id="zmiany">1</p></td><td>17</td><td><p id="pj">P</p>18</td><td>19</td><td id="pr">20<p id="zmiany">1</p></td><td id="ni">21</td>
+	</tr>
+	<tr>
+		<td id="pr"><p id="pj">P</p id="pr">22<p id="zmiany">1</p></td><td id="pr">23<p id="zmiany">1</p></td><td><p id="pj">P</p>24</td><td><p id="pj">P</p>25</td><td>26</td><td id="ps"><p id="pj">6</p>27<p id="zmiany">1</p></td><td id="studia">28</td>
+	</tr>
+	<tr>
+		<td id="pr"><p id="pj">P</p>29<p id="zmiany">1</p></td><td>30</td><td><p id="pj">P</p>31</td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td>
+	</tr>
+	<tr>
+		<td colspan="7">Marzec</td>
+	</tr>
+</table>
+<button onclick="zlicz7()">Auto</button>
+<button onclick="sumka7()">Sumka</button>
+<p id="auto7">Liczba dni: </p>
+<p id="s7">Hajs: </p>
+<script>
+function zlicz7(){
+	var myidd = 16;
+	document.getElementById("auto7").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s7 = 0;
+function sumka7(){
+	s7 = 18.3 * 8 * 16;
+	var myidd = 16;
+	sumkaa = 18.3 * 8 * myidd;
+	document.getElementById("s7").innerHTML = "Hajs: " + Math.round(sumkaa) + " zł";
+}
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Kwiecień</td>
+	<tr>
+		<td id="n"></td><td id="n"></td><td id="n"></td><td id="pr"><p id="pj">T</p>1<p id="zmiany">2</p></td><td id="pr">2<p id="zmiany">1</p></td><td id="pr">3<p id="zmiany">1</p></td><td id="ni">4</td>
+	</tr>
+	<tr>
+		<td>5</td><td id="pr">6<p id="zmiany">1</p></td><td>7</td><td id="pr">8<p id="zmiany">1</p></td><td id="pr">9<p id="zmiany">1</p></td><td>10</td><td id="ni">11</td>
+	</tr>
+	<tr>
+		<td id="pr">12<p id="zmiany">2</p></td><td id="pr">13<p id="zmiany">1</p></td><td id="pr">14<p id="zmiany">1</p></td><td>15</td><td id="pr">16<p id="zmiany">1</p></td><td id="studia">17</td><td id="studia">18</td>
+	</tr>
+	<tr>
+		<td id="pr"><p id="pj">T</p>19<p id="zmiany">1</p></td><td id="pr">20<p id="zmiany">1</p></td><td id="pr"><p id="pj">5</p>21<p id="zmiany">L</p></td><td id="pr">22<p id="zmiany">1</p></td><td id="pr">23<p id="zmiany">1</p></td><td id="pr">24<p id="zmiany">1</p></td><td id="pr">25<p id="zmiany">1</p></td>
+	</tr>
+	<tr>
+		<td id="pr">26<p id="zmiany">2</p></td><td id="pr">27<p id="zmiany">1</p></td><td id="pr"><p id="pj">5</p>28<p id="zmiany">2</td><td id="pr">29<p id="zmiany">1</p></td><td id="pr">30<p id="zmiany">1</p></td><td id="n"></td><td id="n"></td>
+	</tr>
+	<tr>
+		<td colspan="7">Kwiecień</td>
+	</tr>
+</table>
+<button onclick="zlicz8()">Auto</button>
+<button onclick="sumka8()">Sumka</button>
+<p id="auto8">Liczba dni: </p>
+<p id="s8">Hajs: </p>
+<script>
+function zlicz8(){
+	var myidd = 22;
+	document.getElementById("auto8").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s8 = 22;
+function sumka8(){
+	s8 = (18.3 * 8 * 21)-110;
+	var myidd = 22;
+	sumkaa = (18.3 * 8 * myidd)-110;
+	document.getElementById("s8").innerHTML = "Hajs: " + Math.round(sumkaa) + " zł";
+}
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Maj</td>
+	<tr>
+		<td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td>1</td><td id="ni">2</td>
+	</tr>
+	<tr>
+		<td>3</td><td id="pr">4<p id="zmiany">1</p></td><td>5</td><td>6</td><td id="pr">7<p id="zmiany">1</p></td><td id="ps">8<p id="zmiany">1</p></td><td id="studia">9</td>
+	</tr>
+	<tr>
+		<td id="pr">10<p id="zmiany">1</p></td><td id="pr">11<p id="zmiany">1</p></td><td>12</td><td>13</td><td id="pr">14<p id="zmiany">1</p></td><td id="pr">15<p id="zmiany">1</p></td><td id="ni">16</td>
+	</tr>
+	<tr>
+		<td id="pr">17<p id="zmiany">1</p></td><td id="pr">18<p id="zmiany">1</p></td><td id="pr">19<p id="zmiany">1</p></td><td>20</td><td id="pr">21<p id="zmiany">1</p></td><td id="ps">22<p id="zmiany">1</p></td><td id="studia">23</td>
+	</tr>
+	<tr>
+		<td id="pr">24<p id="zmiany">1</p></td><td id="pr">25<p id="zmiany">1</p></td><td>26</td><td>27</td><td id="pr">28<p id="zmiany">1</p></td><td id="pr">29<p id="zmiany">1</p></td><td id="ni">30</td>
+	</tr>
+	<tr>
+		<td>31</td><td colspan="6">Maj</td>
+	</tr>
+</table>
+<button onclick="zlicz9()">Auto</button>
+<button onclick="sumka9()">Sumka</button>
+<p id="auto9">Liczba dni: </p>
+<p id="s9">Hajs: </p>
+<script>
+function zlicz9(){
+	var myidd = 16;
+	document.getElementById("auto9").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s9 = 16;
+function sumka9(){
+	s9 = (18.3 * 8 * 16)-36.6;
+	var myidd = 16;
+	sumkaa = (18.3 * 8 * myidd)-36.6;
+	document.getElementById("s9").innerHTML = "Hajs: " + Math.round(sumkaa) + " zł";
+}
+</script>
+</div>
+<!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div id="ms">   
+<table> 
+	<td colspan="7">Czerwiec</td>
+	<tr>
+		<td id="n"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td id="ni">6</td>
+	</tr>
+	<tr>
+		<td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td id="studia">12</td><td id="studia">13</td>
+	</tr>
+	<tr>
+		<td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td id="ni">20</td>
+	</tr>
+	<tr>
+		<td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td id="studia">26</td><td id="studia">27</td>
+	</tr>
+	<tr>
+		<td>28</td><td>29</td><td>30</td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td>
+	</tr>
+	<tr>
+		<td colspan="7">Czerwiec</td>
+	</tr>
+</table>
+<button onclick="zlicz10()">Auto</button>
+<button onclick="sumka10()">Sumka</button>
+<p id="auto10">Liczba dni: </p>
+<p id="s10">Hajs: </p>
+<script>
+function zlicz10(){
+	var myidd = 0;
+	document.getElementById("auto10").innerHTML = "Liczba dni: " +myidd;
+}
+
+var s10 = 0;
+function sumka10(){
+	s10 = 18.3 * 8 * 0;
+	var myidd = 0;
+	sumkaa = 18.3 * 8 * myidd;
+	document.getElementById("s10").innerHTML = "Hajs: " +sumkaa+" zł";
+}
+</script>
+</div>
+<div id="stopka">
+<br><br>
+<p id="ccc">© Wszelkie prawa zastrzeżone</p>
+</div>
+</body>
+</html>
