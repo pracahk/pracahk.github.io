@@ -178,10 +178,18 @@ img{
 }
 
 #serwisek{
-	width: 100%;
+	width: 80%;
 	background-color: #222222;
 	color: white;
 	height: 125px;
+}
+
+#serwisek2{
+	width: 20%;
+	background-color: #222222;
+	color: white;
+	height: 125px;
+	float: right;
 }
 
 a{
