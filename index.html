@@ -408,7 +408,7 @@ function zlicz8(){
 	document.getElementById("auto8").innerHTML = "Liczba dni: " +myidd;
 }
 
-var s8 = 22;
+var s8 = 0;
 function sumka8(){
 	s8 = (18.3 * 8 * 21)-110;
 	var myidd = 22;
@@ -450,7 +450,7 @@ function zlicz9(){
 	document.getElementById("auto9").innerHTML = "Liczba dni: " +myidd;
 }
 
-var s9 = 17;
+var s9 = 0;
 function sumka9(){
 	s9 = (18.3 * 8 * 17)-36.6;
 	var myidd = 17;
@@ -492,7 +492,7 @@ function zlicz10(){
 	document.getElementById("auto10").innerHTML = "Liczba dni: " +myidd;
 }
 
-var s10 = 18;
+var s10 = 0;
 function sumka10(){
 	s10 = 18.3 * 8 * 18;
 	var myidd = 18;
@@ -506,13 +506,13 @@ function sumka10(){
 <table> 
 	<td colspan="7">Lipiec</td>
 	<tr>
-		<td id="n"></td><td id="n"></td><td id="n"></td><td>1</td><td id="pr">2</td><td id="pr">3</td><td id="ni">4</td>
+		<td id="n"></td><td id="n"></td><td id="n"></td><td id="pr"><p id="pj">6</p>1<p id="zmiany">1</p></td><td id="pr">2<p id="zmiany">2</p></td><td id="pr">3<p id="zmiany">2</p></td><td id="ni">4</td>
 	</tr>
 	<tr>
-		<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td id="ni">11</td>
+		<td id="pr">5<p id="zmiany">2</p></td><td id="pr">6<p id="zmiany">2</p></td><td>7</td><td id="pr">8<p id="zmiany">1</p></td><td id="pr">9<p id="zmiany">1</p></td><td>10</td><td id="ni">11</td>
 	</tr>
 	<tr>
-		<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td >17</td><td id="ni">18</td>
+		<td>12</td><td id="pr">13<p id="zmiany">2</p></td><td id="pr">14<p id="zmiany">1</p></td><td id="pr">15<p id="zmiany">2</p></td><td id="pr">16<p id="zmiany">2</p></td><td id="pr">17<p id="zmiany">1</p></td><td id="ni">18</td>
 	</tr>
 	<tr>
 		<td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td id="ni">25</td>
@@ -530,15 +530,15 @@ function sumka10(){
 <p id="s11">Hajs: </p>
 <script>
 function zlicz11(){
-	var myidd = 2;
+	var myidd = 12;
 	document.getElementById("auto11").innerHTML = "Liczba dni: " +myidd;
 }
 
-var s11 = 2;
+var s11 = 0;
 function sumka11(){
-	s11 = 18.3 * 8 * 2;
-	var myidd = 2;
-	sumkaa = 18.3 * 8 * myidd;
+	s11 = (18.3 * 8 * 12)+110;
+	var myidd = 12;
+	sumkaa = (18.3 * 8 * myidd)+110;
 	document.getElementById("s11").innerHTML = "Hajs: " +Math.round(sumkaa)+" zł";
 }
 </script>
@@ -546,7 +546,7 @@ function sumka11(){
 <!---------------------------------------------------------------------------------------------------------------------------------->
 <div id="ms">   
 <table> 
-	<td colspan="7">Sierpirń</td>
+	<td colspan="7">Sierpień</td>
 	<tr>
 		<td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td id="ni">1</td>
 	</tr>
