@@ -116,9 +116,15 @@ img{
 	margin-left: 5px;
 }
 
-#suma, #amus, #ind{
+#suma, #amus{
 	margin-left: 5px;
 	width: 40%;
+	clear: both;
+}
+
+#ind{
+	margin-left: 5px;
+	width: 30%;
 	clear: both;
 }
 
