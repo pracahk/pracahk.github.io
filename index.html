@@ -8,7 +8,8 @@
 </head>
 <body>
 <div id="buttons">
-<button onClick="sumaA()" class="but">Suma (A)</button><p id="amus">Suma: </p>
+<button onClick="suma()" class="but">Suma</button><p id="amus">Suma: </p>
+<button onClick="dni()" class="but">Dni</button><p id="ind">Dni: </p>
 </div>
 <div id="gp">
 <p id="legend">Legenda:</p>
@@ -29,11 +30,16 @@ var password=window.prompt("Podaj hasło","");
 -->
 <script> 
 var amus;
-	function sumaA(){
+	function suma(){
 		amus = s1 + s2 + s3 + s4 + s5 + Math.round(s6) + Math.round(s7) + Math.round(s8) + Math.round(s9) + Math.round(s10) + Math.round(s11);	
-		amus = document.getElementById("amus").innerHTML ="Suma: "+amus+"zł";
+		amus = document.getElementById("amus").innerHTML ="Suma: "+amus+" zł";
 }
 
+var ind;
+	function dni(){
+		ind = myidd1 + myidd2;
+		ind = document.getElementById("ind").innerHTML ="Dni: "+ind+" dni"
+}
 </script>
 </div>
 <!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -70,16 +76,16 @@ var amus;
 <p id="auto1">Liczba dni: </p>
 <p id="s1">Hajs: </p>
 <script>
-
+var myidd1 = 0;
 function zlicz1(){
-	var myidd = 8;
-	document.getElementById("auto1").innerHTML = "Liczba dni: " +myidd;
+	var myidd1 = 8;
+	document.getElementById("auto1").innerHTML = "Liczba dni: " +myidd1;
 }
 var s1 = 0;
 function sumka1(){
 	s1 = 17*8*8;
-	var myidd = 8;
-	sumkaa = 17*8*myidd;
+	var myidd1 = 8;
+	sumkaa = 17*8*myidd1;
 	document.getElementById("s1").innerHTML = "Hajs: " +sumkaa+" zł";
 }
 
@@ -138,15 +144,16 @@ function klik1(){
 <script>
 
 // myidd = liczba dni
+var myidd2 = 0;
 function zlicz2(){
-	var myidd = 12;
-	document.getElementById("auto2").innerHTML = "Liczba dni: " +myidd;
+	var myidd2 = 12;
+	document.getElementById("auto2").innerHTML = "Liczba dni: " +myidd2;
 }
 var s2 = 0;
 function sumka2(){
 	s2 = 17*8*12;
-	var myidd = 12;
-	sumkaa = 17*8*myidd;
+	var myidd2 = 12;
+	sumkaa = 17*8*myidd2;
 	document.getElementById("s2").innerHTML = "Hajs: " +sumkaa+" zł";
 }
 /*
@@ -253,7 +260,7 @@ function sumka4(){
 <table> 
 	<td colspan="7">Styczeń</td>
 	<tr>
-		<td id="n">></td><td id="n"></td><td id="n"></td><td id="n"></td><td>1</td><td id="pr">2</td><td id="ni">3</td>
+		<td id="n"></td><td id="n"></td><td id="n"></td><td id="n"></td><td>1</td><td id="pr">2</td><td id="ni">3</td>
 	</tr>
 	<tr>
 		<td id="pr">4</td><td id="pr">5</td><td>6</td><td id="pr">7</td><td>8</td><td id="pr">9</td><td id="ni">10</td>
@@ -512,10 +519,10 @@ function sumka10(){
 		<td id="pr">5<p id="zmiany">2</p></td><td id="pr">6<p id="zmiany">2</p></td><td id="pr">7<p id="zmiany">1</p></td><td id="pr">8<p id="zmiany">1</p></td><td id="pr">9<p id="zmiany">1</p></td><td>10</td><td id="ni">11</td>
 	</tr>
 	<tr>
-		<td>12</td><td id="pr">13<p id="zmiany">2</p></td><td id="pr">14<p id="zmiany">1</p></td><td id="pr">15<p id="zmiany">2</p></td><td id="pr">16<p id="zmiany">2</p></td><td id="pr">17<p id="zmiany">1</p></td><td id="ni">18</td>
+		<td>12</td><td id="pr">13<p id="zmiany">2</p></td><td id="pr">14<p id="zmiany">1</p></td><td id="pr"><p id="pj">12</p>15<p id="zmiany">2</p></td><td id="pr"><p id="pj">12</p>16<p id="zmiany">2</p></td><td id="pr">17<p id="zmiany">2</p></td><td id="ni">18</td>
 	</tr>
 	<tr>
-		<td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td id="ni">25</td>
+		<td id="pr">19<p id="zmiany">1</p></td><td id="pr">20<p id="zmiany">2</p></td><td>21</td><td id="pr">22<p id="zmiany">1</p></td><td>23</td><td id="pr">24<p id="zmiany">1</p></td><td id="ni">25</td>
 	</tr>
 	<tr>
 		<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td id="n"></td>
@@ -530,14 +537,14 @@ function sumka10(){
 <p id="s11">Hajs: </p>
 <script>
 function zlicz11(){
-	var myidd = 13;
+	var myidd = 17;
 	document.getElementById("auto11").innerHTML = "Liczba dni: " +myidd;
 }
 
 var s11 = 0;
 function sumka11(){
-	s11 = (18.3 * 8 * 13)+110;
-	var myidd = 13;
+	s11 = (18.3 * 8 * 18)+110;
+	var myidd = 18;
 	sumkaa = (18.3 * 8 * myidd)+110;
 	document.getElementById("s11").innerHTML = "Hajs: " +Math.round(sumkaa)+" zł";
 }
