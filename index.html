@@ -31,13 +31,13 @@ var password=window.prompt("Podaj hasło","");
 <script> 
 var amus;
 	function suma(){
-		amus = s1 + s2 + s3 + s4 + s5 + Math.round(s6) + Math.round(s7) + Math.round(s8) + Math.round(s9) + Math.round(s10) + Math.round(s11) + Math.round(s12);	
+		amus = s1 + s2 + s3 + s4 + s5 + Math.round(s6) + Math.round(s7) + Math.round(s8) + Math.round(s9) + Math.round(s10) + Math.round(s11) + Math.round(s12) + Math.round(s13);	
 		amus = document.getElementById("amus").innerHTML ="Suma: "+amus+" zł";
 }
 
 var ind;
 	function dni(){
-		ind = myidd1 + myidd2 + myidd3 + myidd4 + myidd5 + myidd6 + myidd7 + myidd8 + myidd9 + myidd10 + myidd11 + myidd12;
+		ind = myidd1 + myidd2 + myidd3 + myidd4 + myidd5 + myidd6 + myidd7 + myidd8 + myidd9 + myidd10 + myidd11 + myidd12 + myidd13;
 		ind = document.getElementById("ind").innerHTML ="Dni: "+ind+" dni"
 }
 </script>
@@ -585,10 +585,10 @@ function sumka11(){
 		<td id="pr">16<p id="zmiany">1</p></td><td id="pr">17<p id="zmiany">2</p></td><td>18</td><td>19</td><td id="pr">20<p id="zmiany">1</p></td><td id="pr">21<p id="zmiany">1</p></td><td id="ni">22</td>
 	</tr>
 	<tr>
-		<td id="pr">23<p id="zmiany">2</p></td><td id="pr">24<p id="zmiany">2</p></td><td id="pr">25<p id="zmiany">1</p></td><td id="pr"><p id="pj">16</p>26<p id="zmiany">1</p></td><td>27</td><td id="pr">28<p id="zmiany">2</p></td><td id="pr">29<p id="zmiany">1</p></td>
+		<td id="pr">23<p id="zmiany">2</p></td><td id="pr">24<p id="zmiany">2</p></td><td id="pr">25<p id="zmiany">1</p></td><td id="pr"><p id="pj">16</p>26<p id="zmiany">1</p></td><td id="pr"><p id="pj">L</p>27<p id="zmiany">1</p></td><td id="pr">28<p id="zmiany">2</p></td><td id="pr"><p id="pj">16</p>29<p id="zmiany">1</p></td>
 	</tr>
 	<tr>
-		<td>30</td><td>31</td><td colspan="5">Sierpień</td>
+		<td id="pr">30<p id="zmiany">1</p></td><td>31</td><td colspan="5">Sierpień</td>
 	</tr>
 </table>
 <button onclick="zlicz12()">Auto</button>
@@ -598,15 +598,15 @@ function sumka11(){
 <script>
 var myidd12 = 0;
 function zlicz12(){
-	myidd12 = 21;
-	var myidd = 21;
+	myidd12 = 23;
+	var myidd = 23;
 	document.getElementById("auto12").innerHTML = "Liczba dni: " +myidd;
 }
 
 var s12 = 0;
 function sumka12(){
-	s12 = (18.3 * 8 * 23)+165;
-	var myidd = 23;
+	s12 = (18.3 * 8 * 26)+165;
+	var myidd = 26;
 	sumkaa = (18.3 * 8 * myidd)+165;
 	document.getElementById("s12").innerHTML = "Hajs: " +Math.round(sumkaa)+" zł";
 }
@@ -617,7 +617,7 @@ function sumka12(){
 <table>
 <td colspan="7">Wrzesień</td>
 <tr>
-	<td id="n"></td><td id="n"></td><td>1</td><td>2</td><td>3</td><td>4</td><td id="ni">5</td>
+	<td id="n"></td><td id="n"></td><td id="pr">1<p id="zmiany">1</p></td><td id="pr">2<p id="zmiany">1</p></td><td>3</td><td id="pr">4<p id="zmiany">1</p></td><td id="ni">5</td>
 </tr>
 <tr>
 	<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td id="ni">12</td>
@@ -638,16 +638,18 @@ function sumka12(){
 <p id="auto13">Liczba dni: </p>
 <p id="s13">Hajs: </p>
 <script>
+var myidd13 = 0;
 function zlicz13(){
-	var myidd = 0;
+	myidd13 = 3;
+	var myidd = 3;
 	document.getElementById("auto13").innerHTML = "Liczba dni: " +myidd;
 }
 
 var s13 = 0;
 function sumka13(){
-	s13 = 18.3 * 8 * 0;
-	var myidd = 0;
-	sumkaa = 18.3 * 8 * myidd;
+	s13 = (18.3 * 8 * 3);
+	var myidd = 3;
+	sumkaa = (18.3 * 8 * myidd);
 	document.getElementById("s13").innerHTML = "Hajs: " +Math.round(sumkaa)+" zł";
 }
 </script>
