@@ -617,10 +617,10 @@ function sumka12(){
 <table>
 <td colspan="7">Wrzesień</td>
 <tr>
-	<td id="n"></td><td id="n"></td><td id="pr">1<p id="zmiany">1</p></td><td id="pr">2<p id="zmiany">1</p></td><td>3</td><td id="pr">4<p id="zmiany">1</p></td><td id="ni">5</td>
+	<td id="n"></td><td id="n"></td><td id="pr">1<p id="zmiany">1</p></td><td id="pr">2<p id="zmiany">1</p></td><td>3</td><td id="pr"><p id="pj">10</p>4<p id="zmiany">2</p></td><td id="ni">5</td>
 </tr>
 <tr>
-	<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td id="ni">12</td>
+	<td id="pr"><p id="pj">L</p>6<p id="zmiany">1</p></td><td id="pr">7<p id="zmiany">1</p></td><td>8</td><td id="pr">9<p id="zmiany">1</p></td><td>10</td><td id="pr">11<p id="zmiany">1</p></td><td id="ni">12</td>
 </tr>
 <tr>
 	<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td id="ni">19</td>
@@ -640,16 +640,16 @@ function sumka12(){
 <script>
 var myidd13 = 0;
 function zlicz13(){
-	myidd13 = 3;
-	var myidd = 3;
+	myidd13 = 7;
+	var myidd = 7;
 	document.getElementById("auto13").innerHTML = "Liczba dni: " +myidd;
 }
 
 var s13 = 0;
 function sumka13(){
-	s13 = (18.3 * 8 * 3);
-	var myidd = 3;
-	sumkaa = (18.3 * 8 * myidd);
+	s13 = (18.3 * 8 * 7) + 36;
+	var myidd = 7;
+	sumkaa = (18.3 * 8 * myidd) + 36;
 	document.getElementById("s13").innerHTML = "Hajs: " +Math.round(sumkaa)+" zł";
 }
 </script>
